@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vacation Rentals</title>
+
+  <!-- Bootstrap CSS cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style>
+ 
+    .hero {
+      background: url('./Resources/natuaral.jpg') center center / cover no-repeat;
+      min-height: 280px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 40px 30px;
+      color: white;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.35);
+     
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      margin-bottom: 5px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .circle-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 15px auto;
+      border: 5px solid #ddd;
+    }
+ 
+    .card-section {
+      padding: 40px 0;
+    }
+
+    .card-section h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .card-section p {
+      font-size: 13px;
+      color: #555;
+    }
+
+    footer {
+      background: #f5f5f5;
+      border-top: 1px solid #ddd;
+      padding: 15px 0;
+      font-size: 13px;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Vacation Rentals</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fa fa-star"></i> Top Destinations</a></li>
+         
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-user"></i> About Us <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-ticket"></i> Book Tickets</a></li>
+          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-calendar"></i> Reservation <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Make a Reservation</a></li>
+              <li><a href="#">My Reservations</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" />
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Best Vacation Rentals</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <a href="#" class="btn btn-info btn-lg">Start Now!</a>
+    </div>
+  </div>
+
+  <div class="container card-section">
+    <div class="row">
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+
+        <img src="./Resources/t1.jpg" alt="Type 1" class="circle-img" />
+        <h3>Type 1</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, eum vel vero eveniet odio consectetur,
+          corrupti, blanditiis enim exercitationem nostrum porro. Ipsa sed quisquam aliquid quis accusamus pariatur quod
+          ut.</p>
+        <a href="#" class="btn btn-success">Book Now @ $599</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <img src="./Resources/t2.jpg" alt="Type 2" class="circle-img" />
+        <h3>Type 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos voluptatem voluptatum laboriosam facilis
+          pariatur et. Odit velit est enim tempora consectetur iste impedit optio rerum voluptatibus corporis, doloribus
+          voluptatum.</p>
+        <a href="#" class="btn btn-danger">Book Now @ $800</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <img src="./Resources/t3.jpg" alt="Type 3" class="circle-img" />
+        <h3>Type 3</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro animi, dolorem illum maxime necessitatibus
+          omnis nobis autem sit, inventore quibusdam facere et perferendis, odit reiciendis magnam aperiam! Dolore,
+          itaque ipsa.</p>
+        <a href="#" class="btn btn-info">Book Now @ $699</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-sm-2">
+          <p>&copy; 2013</p>
+        </div>
+        
+        <div class="col-sm-8 text-center">
+          <a href="#" class="btn btn-default btn-sm">About Us</a>
+          <a href="#" class="btn btn-default btn-sm">Support 24x7</a>
+          <a href="#" class="btn btn-default btn-sm">Privacy Policy</a>
+        </div>
+     
+        <div class="col-sm-2 text-right">
+          <strong>Vacation Rentals</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (CDN) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
